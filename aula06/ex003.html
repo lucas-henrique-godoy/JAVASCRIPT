@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        /* Estilos CSS para o corpo do documento */
+        body {
+            background-color: rgb(105, 105, 173); /* Define a cor de fundo do corpo */
+            color: white; /* Define a cor do texto */
+            font: normal 20pt arial; /* Define a fonte e tamanho do texto */
+        }
+
+        /* Estilos CSS para os cabeçalhos <h1> */
+        h1 {
+            color: yellow; /* Define a cor do texto dos cabeçalhos <h1> */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho principal -->
+    <h1>Olá, mundo!</h1>
+
+    <!-- Parágrafo com texto -->
+    <p>Já me livrei da maldição</p>
+
+    <!-- Script JavaScript -->
+    <script>
+       var n1 = Number(window.prompt('Digite um número: ')) //string
+       var n2 = Number(window.prompt('Digite outro número: ')) //string 
+       var soma = n1 + n2
+       window.alert('A soma dos valores é: ' + String(soma)) //concatenação utiliza o +.
+       // (number) + (number) para adição 
+       // (string) + (string) para concatenação
+    </script>
+
+    <!-- *OBS: window.prompt trata as variaveis como string mesmo que voce digite números, se você não convertê-las (usando o NUMBER) ele irá apenas concatenar as variaveis sem somar, por isso devemos converte-las em números, nesse caso inteiros, ai elas serão exibidas corretamente no window.alert. -->
+    <!--String(soma) - Converte para string. No exemplo acima não é necessário converter para string pois queremos resultados numéricos, foi apenas uma demonstração de como seria.-->
+</body>
+</html>
+

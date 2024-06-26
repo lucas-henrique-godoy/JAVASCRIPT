@@ -1,0 +1,7 @@
+window.alert('Minha primeira mensagem!'); - Exibe um alerta com a mensagem 'Minha primeira mensagem!'
+
+        
+        window.confirm('Está gostando de JS?'); - Exibe um diálogo de confirmação com a pergunta 'Está gostando de JS?'
+
+        
+        window.prompt('Qual é seu nome?: '); - Exibe um prompt com a pergunta 'Qual é seu nome?: ' e aguarda a entrada do usuário
