@@ -133,4 +133,11 @@ let resultadoOr = num1 | num2; // resultadoOr é 7 (binário: 0111)
 Conclusão
 Os operadores em JavaScript são fundamentais para realizar desde operações simples até manipulações mais complexas de dados. Compreender como e quando usar cada tipo de operador é essencial para escrever código eficiente e funcional em JavaScript.
 
+- ORDEM DE PRECEDÊNCIA DOS OPERADORES:
+()
+**
+* / %   ➔ Se aparecer mais de um na mesma expressão, a precedência segue quem aparecer primeiro da esquerda para a direita.
++-
+_______________________________________________________________________________________________________________________________________________________________________
+
 
