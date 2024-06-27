@@ -5,19 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
         body {
             font: normal 20pt arial;
+            background-color: blueviolet;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        div {
+            padding: 20px;
+            background-color: rgb(159, 104, 211);
+            margin-bottom: 50px;
         }
     </style>
 </head>
 <body>
+    <div>
+        <h1>Exemplo de Intereações com Javascript</h1>
+    </div>
     
     <script>
         // Solicita ao usuário que insira seu nome e armazena o valor na variável 'nome'
         var nome = window.prompt('Qual é seu nome? ');
         
         // Escreve na página HTML uma saudação com o nome em negrito e informa quantas letras o nome possui
-        document.write(`Ola, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras <br>`);
+        document.write(`Ola, <strong>${nome}</strong> seu nome tem ${nome.length} letras <br>`);
         
         // Escreve na página HTML o nome do usuário convertido para letras maiúsculas
         document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()}<br>`);
