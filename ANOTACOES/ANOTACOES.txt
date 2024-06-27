@@ -81,6 +81,7 @@ let soma = a + b; // soma é 15
 let resto = a % b; // resto é 0
 a++; // agora 'a' é 11
 b--; // agora 'b' é 4
+
 2. Operadores de Atribuição
 Os operadores de atribuição são usados para atribuir valores a variáveis.
 
@@ -88,9 +89,9 @@ Atribuição simples (=): Atribui o valor do operando direito ao operando esquer
 Atribuição com operação combinada (+=, -=, *=, /=, %=): Realiza uma operação aritmética e atribui o resultado à variável.
 Exemplo:
 
-
 let x = 5;
 x += 3; // x agora é 8
+
 3. Operadores de Comparação
 Os operadores de comparação são usados para comparar dois valores ou variáveis e retornar um valor booleano (true ou false) indicando a relação entre eles.
 
@@ -99,11 +100,11 @@ Diferente (!=) e Estritamente Diferente (!==): Verifica se dois valores são dif
 Maior (>), Menor (<), Maior ou Igual (>=), Menor ou Igual (<=): Compara se um valor é maior, menor, maior ou igual ou menor ou igual ao outro.
 Exemplo:
 
-
 let num1 = 10;
 let num2 = 5;
 let igual = num1 === num2; // igual é false
 let maiorQue = num1 > num2; // maiorQue é true
+
 4. Operadores Lógicos
 Os operadores lógicos são usados para combinar expressões condicionais e retornar um valor booleano.
 
@@ -139,5 +140,29 @@ Os operadores em JavaScript são fundamentais para realizar desde operações si
 * / %   ➔ Se aparecer mais de um na mesma expressão, a precedência segue quem aparecer primeiro da esquerda para a direita.
 +-
 _______________________________________________________________________________________________________________________________________________________________________
+EXEMPLOS DE ATRIBUIÇÃO:
 
+var n = 3
+
+n = n + 4  ➔ SIMPLIFICANDO ➔ n += 4  ➔ SIMPLIFICANDO MAIS AINDA ➔ n++
+n = n -5   ➔ SIMPLIFICANDO ➔ n -= 5  ➔ SIMPLIFICANDO MAIS AINDA ➔ n--
+n = n * 4  ➔ SIMPLIFICANDO ➔ n *= 4
+n = n / 2  ➔ SIMPLIFICANDO ➔ n /= 2
+n = n ** 2 ➔ SIMPLIFICANDO ➔ n **= 2
+n = n % 5  ➔ SIMPLIFICANDO ➔ n %= 5
+
+OBS: Para simplificar expressões só funciona se a mesma variável receber ela mesma e outro valor. Por exemplo n = n + 4. Lê-se: n recebe o valor de n mais 4. Nesse caso podemos simplificar para n += 4. Se no caso fosse:  n = x + 4 não será possível simplificar.
+_______________________________________________________________________________________________________________________________________________________________________
+OPERADORES DE INCREMENTO: Primeiro mostram o valor anterior e depois realiza o incremento ou decremento.
+var n = 10
+
+n++ = 11
+n-- = 10
+
+PRÉ-INCREMENTO: Realiza as operações de incremento ou decremento primeiro e mostra o valor atual já com as operações feitas.
+var = 10
+
+++n = 11
+--n = 10
+ 
 
