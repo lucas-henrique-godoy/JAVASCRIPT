@@ -48,11 +48,11 @@ undefined
 1545.5
 > n1.toFixed(2) ➔ formata para ter 2 casas decimais após a vírgula
 '1545.50'
----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 > n1.toFixed(2).replace('.', ',') ➔ Nesse exemplo troca o ponto pela vírgula
 '1545,50'
----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 > n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) ➔ converte o número em uma string formatada como valor monetário brasileiro, por exemplo: R$10,00.
 'R$ 1.545,50'
@@ -63,7 +63,7 @@ ________________________________________________________________________________
 OPERADORES DE JAVASCRIPT
 Os operadores em JavaScript são símbolos especiais que são usados para realizar operações em variáveis e valores. Eles podem ser categorizados em vários tipos principais, cada um com sua função específica. Abaixo, explico os principais tipos de operadores em JavaScript:
 
-1. Operadores Aritméticos
+1. OPERADORES ARITMÉTICOS
 Os operadores aritméticos são usados para realizar operações matemáticas básicas entre variáveis ou valores numéricos.
 
 Adição (+): Soma dois operandos.
@@ -82,7 +82,7 @@ let resto = a % b; // resto é 0
 a++; // agora 'a' é 11
 b--; // agora 'b' é 4
 
-2. Operadores de Atribuição
+2. OPERADORES DE ATRIBUIÇÃO
 Os operadores de atribuição são usados para atribuir valores a variáveis.
 
 Atribuição simples (=): Atribui o valor do operando direito ao operando esquerdo.
@@ -92,7 +92,7 @@ Exemplo:
 let x = 5;
 x += 3; // x agora é 8
 
-3. Operadores de Comparação
+3. OPERADORES DE COMPARAÇÃO
 Os operadores de comparação são usados para comparar dois valores ou variáveis e retornar um valor booleano (true ou false) indicando a relação entre eles.
 
 Igual (==) e Estritamente Igual (===): Verifica se dois valores são iguais. O operador estritamente igual também verifica o tipo.
@@ -105,7 +105,7 @@ let num2 = 5;
 let igual = num1 === num2; // igual é false
 let maiorQue = num1 > num2; // maiorQue é true
 
-4. Operadores Lógicos
+4. OPERADORES LÓGICOS
 Os operadores lógicos são usados para combinar expressões condicionais e retornar um valor booleano.
 
 E lógico (&&): Retorna verdadeiro se ambas as expressões forem verdadeiras.
@@ -134,12 +134,26 @@ let resultadoOr = num1 | num2; // resultadoOr é 7 (binário: 0111)
 Conclusão
 Os operadores em JavaScript são fundamentais para realizar desde operações simples até manipulações mais complexas de dados. Compreender como e quando usar cada tipo de operador é essencial para escrever código eficiente e funcional em JavaScript.
 
-- ORDEM DE PRECEDÊNCIA DOS OPERADORES:
+- ORDEM DE PRECEDÊNCIA DOS OPERADORES ARITMÉTICOS:
 ()
 **
 * / %   ➔ Se aparecer mais de um na mesma expressão, a precedência segue quem aparecer primeiro da esquerda para a direita.
 +-
 _______________________________________________________________________________________________________________________________________________________________________
+ORDEM DE PRECEDÊNCIA SE TIVERMOS OS 3 TIPOS DE OPERADORES NA EXPRESSÃO: Devemos primeiro resolver os aritméticos depois os relacionais e por ultimo os lógicos.
+1º ARITMÉTICOS
+2º RELACIONAIS
+3º LÓGICOS
+
+EXEMPLO: 
+> var a = 5
+undefined
+> var b = 8
+undefined
+> a > b && b % 2 == 0       
+false ➔ resultado
+
+*Nesse caso, resolvendo a parte aritmética primeiro, temos b = 8 % 2 com resultado 0. Então esta parte é verdadeira (true). Em seguida, resolvendo a parte relacional, temos a > b. Como 5 não é maior que 8, isso resulta em falso (false). Por fim, ao resolver a parte lógica, observamos que o operador && só retorna verdadeiro (true) se ambas as condições forem verdadeiras. Como uma parte é falsa (false) e a outra é verdadeira (true), de acordo com o operador &&, o resultado final é falso (false)._______________________________________________________________________________________________________________________________________________________________________
 EXEMPLOS DE ATRIBUIÇÃO:
 
 var n = 3
@@ -164,5 +178,46 @@ var = 10
 
 ++n = 11
 --n = 10
- 
+_______________________________________________________________________________________________________________________________________________________________________
+EXEMPLOS DE OPERADORES RELACIONAIS: O resultado sempre é um booleano - true ou false
+
+5 > 2  ➔ true
+7 < 4  ➔ false
+8 >= 8 ➔ true
+9 <= 7 ➔ false
+5 == 5 ➔ true
+4 != 4 ➔ false
+_______________________________________________________________________________________________________________________________________________________________________
+OPERADOR DE IGUALDADE:
+O operador de igualdade == testa apenas o valor das variáveis, sem considerar o tipo. Isso significa que ele tenta converter os operandos para o mesmo tipo antes de fazer a comparação. Por exemplo:
+
+1 == '1'   // true, porque '1' é convertido para número antes da comparação
+_______________________________________________________________________________________________________________________________________________________________________
+
+OPERADOR DE IDENTIDADE:
+O operador de identidade ===, também conhecido como operador de igualdade estrita, testa tanto o valor quanto o tipo das variáveis. Ele não faz conversões de tipo e retorna true apenas se os operandos são do mesmo tipo e têm o mesmo valor. Por exemplo:
+
+1 === '1'  // false, porque são tipos diferentes (number e string)
+Portanto, o uso do === é geralmente preferível quando se deseja garantir que tanto o valor quanto o tipo das variáveis sejam idênticos na comparação.
+_______________________________________________________________________________________________________________________________________________________________________
+Operador de Desigualdade Restrito (!==)
+O operador !== é utilizado para verificar se dois valores são diferentes tanto em tipo quanto em valor. Ele retorna true se os operandos não são iguais e/ou não são do mesmo tipo. Por exemplo:
+
+1 !== '1'   // true, porque são de tipos diferentes (number e string)
+1 !== 1     // false, porque são do mesmo tipo e têm o mesmo valor
+_______________________________________________________________________________________________________________________________________________________________________
+
+MAIS EXEMPLOS:
+5 == 5    ➔ TRUE
+5 == '5'  ➔ TRUE
+5 === '5' ➔ FALSE
+5 === 5   ➔ TRUE
+5 !== '5' ➔ TRUE // Operador de Desigualdade restrita
+_______________________________________________________________________________________________________________________________________________________________________
+EXEMPLOS DE OPERADORES LÓGICOS
+
+!  ➔ NEGAÇÃO (NÃO)
+&& ➔ CONJUNÇÃO (E)
+|| ➔ DISJUNÇÃO (OU)
+
 
