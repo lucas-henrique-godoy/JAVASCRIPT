@@ -1,7 +1,32 @@
-window.alert('Minha primeira mensagem!'); - Exibe um alerta com a mensagem 'Minha primeira mensagem!'
+CURSO DE JAVASCRIPT
+- Para abrir um novo terminal é só apertar CTRL + SHIFT + '.
+- Para entrar no node é só abrir um terminal e digitar node.
+- Dentro do node se quiser limpar a tela é só apertar CTRL + L.
+- Se quiser sair do node é só digitar .exit.
+- Se quiser sair do terminal normal(sem ser o node), é só digitar exit
 
-        
-        window.confirm('Está gostando de JS?'); - Exibe um diálogo de confirmação com a pergunta 'Está gostando de JS?'
+- window.alert('Minha primeira mensagem!'); - Exibe um alerta com a mensagem 'Minha primeira mensagem!'        
+- window.confirm('Está gostando de JS?'); - Exibe um diálogo de confirmação com a pergunta 'Está gostando de JS?'
+- window.prompt('Qual é seu nome?: '); - Exibe um prompt com a pergunta 'Qual é seu nome?: ' e aguarda a entrada do usuário
+- typeof - Mostra o tipo da variável no terminal.
 
-        
-        window.prompt('Qual é seu nome?: '); - Exibe um prompt com a pergunta 'Qual é seu nome?: ' e aguarda a entrada do usuário
+Exemplo de concatenação:
+nome = 'Lucas'
+'Lucas'
+> idade = 26
+26
+> nota = 10
+10
+> 'O aluno ' + nome + ' de ' + idade + ' anos tirou a nota: ' + nota + '!'
+*saída no terminal: 'O aluno Lucas de 26 anos tirou a nota: 10!' 
+
+Exemplo de Template String:
+nome = 'Lucas'
+'Lucas'
+> idade = 26
+26
+> nota = 10
+10
+> `O aluno ${nome} de ${idade} anos tirou a nota: ${nota}!`
+*saída no terminal: 'O aluno Lucas de 26 anos tirou a nota: 10!'
+
