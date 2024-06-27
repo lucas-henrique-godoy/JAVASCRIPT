@@ -40,4 +40,23 @@ var s = 'Javascript'
 - s.lenght         ➔ quantos caracteres a string tem
 - s.toUpperCase()  ➔ tudo para MAIÚSCULAS
 - s.toLowerCase()  ➔ tudo para minúsculas
+_______________________________________________________________________________________________________________________________________________________________________
+FORMTAÇÃO DE NÚMEROS:
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2) ➔ formata para ter 2 casas decimais após a vírgula
+'1545.50'
+---------------------------------------------------------------------------------------------
+
+> n1.toFixed(2).replace('.', ',') ➔ Nesse exemplo troca o ponto pela vírgula
+'1545,50'
+---------------------------------------------------------------------------------------------
+
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) ➔ converte o número em uma string formatada como valor monetário brasileiro, por exemplo: R$10,00.
+'R$ 1.545,50'
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) ➔ converte o número em uma string formatada como valor monetário americano, por exemplo: US$10,00
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) ➔ converte o número em uma string formatada como valor monetário euro, por exemplo: €10,00
 
