@@ -59,4 +59,78 @@ undefined
 
 n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) ➔ converte o número em uma string formatada como valor monetário americano, por exemplo: US$10,00
 n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) ➔ converte o número em uma string formatada como valor monetário euro, por exemplo: €10,00
+_______________________________________________________________________________________________________________________________________________________________________
+OPERADORES DE JAVASCRIPT
+Os operadores em JavaScript são símbolos especiais que são usados para realizar operações em variáveis e valores. Eles podem ser categorizados em vários tipos principais, cada um com sua função específica. Abaixo, explico os principais tipos de operadores em JavaScript:
+
+1. Operadores Aritméticos
+Os operadores aritméticos são usados para realizar operações matemáticas básicas entre variáveis ou valores numéricos.
+
+Adição (+): Soma dois operandos.
+Subtração (-): Subtrai o operando direito do operando esquerdo.
+Multiplicação (*): Multiplica dois operandos.
+Divisão (/): Divide o operando esquerdo pelo operando direito.
+Módulo (%): Retorna o resto da divisão inteira do operando esquerdo pelo operando direito.
+Incremento (++) e Decremento (--): Aumenta ou diminui o valor de uma variável por 1.
+Exemplo:
+
+
+let a = 10;
+let b = 5;
+let soma = a + b; // soma é 15
+let resto = a % b; // resto é 0
+a++; // agora 'a' é 11
+b--; // agora 'b' é 4
+2. Operadores de Atribuição
+Os operadores de atribuição são usados para atribuir valores a variáveis.
+
+Atribuição simples (=): Atribui o valor do operando direito ao operando esquerdo.
+Atribuição com operação combinada (+=, -=, *=, /=, %=): Realiza uma operação aritmética e atribui o resultado à variável.
+Exemplo:
+
+
+let x = 5;
+x += 3; // x agora é 8
+3. Operadores de Comparação
+Os operadores de comparação são usados para comparar dois valores ou variáveis e retornar um valor booleano (true ou false) indicando a relação entre eles.
+
+Igual (==) e Estritamente Igual (===): Verifica se dois valores são iguais. O operador estritamente igual também verifica o tipo.
+Diferente (!=) e Estritamente Diferente (!==): Verifica se dois valores são diferentes. O operador estritamente diferente também verifica o tipo.
+Maior (>), Menor (<), Maior ou Igual (>=), Menor ou Igual (<=): Compara se um valor é maior, menor, maior ou igual ou menor ou igual ao outro.
+Exemplo:
+
+
+let num1 = 10;
+let num2 = 5;
+let igual = num1 === num2; // igual é false
+let maiorQue = num1 > num2; // maiorQue é true
+4. Operadores Lógicos
+Os operadores lógicos são usados para combinar expressões condicionais e retornar um valor booleano.
+
+E lógico (&&): Retorna verdadeiro se ambas as expressões forem verdadeiras.
+OU lógico (||): Retorna verdadeiro se pelo menos uma das expressões for verdadeira.
+NÃO lógico (!): Inverte o valor booleano de uma expressão.
+Exemplo:
+
+let idade = 25;
+let temCarteira = true;
+if (idade > 18 && temCarteira) {
+    // Executa se a idade for maior que 18 e tiver carteira
+}
+5. Operadores Bitwise (Bit a Bit)
+Os operadores bitwise são usados para manipular valores em nível de bits.
+
+AND Bitwise (&): Retorna um 1 para cada bit se ambos os operandos tiverem um 1 no mesmo bit.
+OR Bitwise (|): Retorna um 1 para cada bit se pelo menos um dos operandos tiver um 1 no mesmo bit.
+XOR Bitwise (^): Retorna um 1 para cada bit se exatamente um dos operandos tiver um 1 no mesmo bit.
+Deslocamento à Esquerda (<<) e Deslocamento à Direita (>>): Desloca os bits de um número para a esquerda ou direita, deslocando zeros à esquerda ou à direita.
+Exemplo:
+
+let num1 = 5; // em binário: 0101
+let num2 = 3; // em binário: 0011
+let resultadoAnd = num1 & num2; // resultadoAnd é 1 (binário: 0001)
+let resultadoOr = num1 | num2; // resultadoOr é 7 (binário: 0111)
+Conclusão
+Os operadores em JavaScript são fundamentais para realizar desde operações simples até manipulações mais complexas de dados. Compreender como e quando usar cada tipo de operador é essencial para escrever código eficiente e funcional em JavaScript.
+
 
