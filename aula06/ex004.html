@@ -13,10 +13,18 @@
 <body>
     
     <script>
-        var nome = window.prompt('Qual é seu nome? ')
-        document.write(`Ola, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras <br>`)
-        document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()}<br>`)
-        document.write(`Seu nome em letra minúsculas é ${nome.toLowerCase()}`)
+        // Solicita ao usuário que insira seu nome e armazena o valor na variável 'nome'
+        var nome = window.prompt('Qual é seu nome? ');
+        
+        // Escreve na página HTML uma saudação com o nome em negrito e informa quantas letras o nome possui
+        document.write(`Ola, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras <br>`);
+        
+        // Escreve na página HTML o nome do usuário convertido para letras maiúsculas
+        document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()}<br>`);
+        
+        // Escreve na página HTML o nome do usuário convertido para letras minúsculas
+        document.write(`Seu nome em letras minúsculas é ${nome.toLowerCase()}`);
     </script>
+    
 </body>
 </html>
