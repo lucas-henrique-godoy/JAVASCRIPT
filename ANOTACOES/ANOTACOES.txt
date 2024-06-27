@@ -31,7 +31,13 @@ nome = 'Lucas'
 *saída no terminal: 'O aluno Lucas de 26 anos tirou a nota: 10!'
 _______________________________________________________________________________________________________________________________________________________________________FORMATAÇÃO DE STRING:
 var s = 'Javascript' 	   
-'Eu estou aprendendo s'     ➔ não faz interpolação
-'Eu estou aprendendo ' + s  ➔ usa concatenação
-`Eu estou aprendendo ${s}`  ➔ usa template string
+- 'Eu estou aprendendo s'     ➔ não faz interpolação
+- 'Eu estou aprendendo ' + s  ➔ usa concatenação
+- `Eu estou aprendendo ${s}`  ➔ usa template string
+_______________________________________________________________________________________________________________________________________________________________________
+var s = 'Javascript'
+
+- s.lenght         ➔ quantos caracteres a string tem
+- s.toUpperCase()  ➔ tudo para MAIÚSCULAS
+- s.toLowerCase()  ➔ tudo para minúsculas
 
