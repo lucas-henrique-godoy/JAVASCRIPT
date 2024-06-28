@@ -143,7 +143,7 @@ ________________________________________________________________________________
 ORDEM DE PRECEDÊNCIA SE TIVERMOS OS 3 TIPOS DE OPERADORES NA EXPRESSÃO: Devemos primeiro resolver os aritméticos depois os relacionais e por ultimo os lógicos.
 1º ARITMÉTICOS
 2º RELACIONAIS
-3º LÓGICOS
+3º LÓGICOS (nos lógicos deve-se fazer primeiro o NÃO depois o E, por último o OU)
 
 EXEMPLO: 
 > var a = 5
@@ -219,5 +219,31 @@ EXEMPLOS DE OPERADORES LÓGICOS
 !  ➔ NEGAÇÃO (NÃO)
 && ➔ CONJUNÇÃO (E)
 || ➔ DISJUNÇÃO (OU)
+_______________________________________________________________________________________________________________________________________________________________________
+OPERADOR TERNÁRIO:   TESTE   ?  TRUE :  FALSE
+EXEMPLO 1:
 
+var media = 5.5
+> media > 7? 'APROVADO':'REPROVADO'
+'REPROVADO' ➔ resultado
+_______________________________________________________________________________________________________________________________________________________________________
 
+EXEMPLO 2:
+ > var x = 8
+> var res = x % 2 == 0 ? 5: 9>
+> x
+8  ➔ resultado
+> res
+5  ➔ resultado
+>
+
+*OBS: O código JavaScript define uma variável x com o valor 8. Em seguida, usa um operador ternário para atribuir um valor à variável res com base na paridade de x:
+Se x for par (ou seja, x % 2 == 0 é verdadeiro), então res recebe o valor 5.
+Caso contrário (se x for ímpar), res recebe o valor 9.
+Como x é 8 (um número par), res será atribuído o valor 5.
+_______________________________________________________________________________________________________________________________________________________________________
+EXEMPLO 3:
+> var idade = 19
+> var r = idade >= 18 ? 'MAIOR' : 'MENOR'
+> r
+'MAIOR' ➔ resultado.
