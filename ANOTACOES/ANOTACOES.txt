@@ -179,7 +179,7 @@ var = 10
 ++n = 11
 --n = 10
 _______________________________________________________________________________________________________________________________________________________________________
-EXEMPLOS DE OPERADORES RELACIONAIS: O resultado sempre é um booleano - true ou false
+** EXEMPLOS DE OPERADORES RELACIONAIS: O resultado sempre é um booleano - true ou false
 
 5 > 2  ➔ true
 7 < 4  ➔ false
@@ -188,7 +188,7 @@ EXEMPLOS DE OPERADORES RELACIONAIS: O resultado sempre é um booleano - true ou 
 5 == 5 ➔ true
 4 != 4 ➔ false
 _______________________________________________________________________________________________________________________________________________________________________
-OPERADOR DE IGUALDADE:
+** OPERADOR DE IGUALDADE: **
 O operador de igualdade == testa apenas o valor das variáveis, sem considerar o tipo. Isso significa que ele tenta converter os operandos para o mesmo tipo antes de fazer a comparação. Por exemplo:
 
 1 == '1'   // true, porque '1' é convertido para número antes da comparação
@@ -247,3 +247,51 @@ EXEMPLO 3:
 > var r = idade >= 18 ? 'MAIOR' : 'MENOR'
 > r
 'MAIOR' ➔ resultado.
+_______________________________________________________________________________________________________________________________________________________________________** ENTENDO DOM- DOCUMENT OBJECT MODEL: Conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do website. Não funciona dentro do nodejs. O DOM esta presente quando estamos rodando javascript dentro do navegador.
+
+-Árvore DOM: Começa da raiz, e essa raiz dentro do navegador é chamada de window.
+
+Em JavaScript, "DOM" significa "Document Object Model" (Modelo de Objeto de Documento). O DOM é uma representação da estrutura hierárquica de um documento HTML (ou XML) que permite interação dinâmica com a página web. Aqui estão os principais pontos sobre o DOM em JavaScript:
+
+Estrutura Hierárquica: O DOM organiza todos os elementos HTML de uma página em uma estrutura de árvore. Cada elemento, como <html>, <body>, <div>, <p>, entre outros, é representado por um nó no DOM.
+
+Manipulação Dinâmica: JavaScript pode ser usado para acessar, modificar e manipular o conteúdo, estrutura e estilo da página web através do DOM. Isso permite que você adicione, remova ou altere elementos HTML, atributos e estilos em tempo de execução.
+
+Acesso aos Elementos: Você pode acessar elementos individuais do DOM usando métodos como getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll, entre outros.
+
+Eventos: O DOM também gerencia eventos, como cliques de mouse, pressionamentos de tecla e alterações de estado, permitindo que você responda a interações do usuário com a página.
+
+Árvore DOM: A expressão "árvore do DOM" refere-se especificamente à estrutura hierárquica de nós que compõem o DOM. Essa estrutura começa com o nó raiz, que representa todo o documento (geralmente <html>), e se ramifica para os nós filhos (como <head>, <body>, <div>, etc.) e subsequentemente para outros nós, formando uma árvore de elementos.
+
+** LOCATION, DOCUMENT E HISTORY **
+
+Em JavaScript, location, document e history são objetos fundamentais que representam diferentes aspectos da janela do navegador e da sessão de navegação. Vamos explorar cada um deles:
+
+window.location:
+
+O objeto location representa a URL do documento atual carregado no navegador.
+Ele possui propriedades como href, protocol, host, hostname, port, pathname, search e hash, que fornecem informações detalhadas sobre a URL atual.
+Exemplo de uso:
+
+console.log(window.location.href); // Exibe a URL completa da página atual
+window.location.href = 'https://www.example.com'; // Redireciona para outra URL
+window.document:
+
+O objeto document representa o documento HTML carregado atualmente no navegador.
+Ele fornece métodos para acessar e manipular elementos HTML e conteúdo dentro da página.
+Exemplo de uso:
+
+let header = document.getElementById('header'); // Acessa um elemento pelo seu ID
+header.textContent = 'Novo Título'; // Altera o texto do elemento
+window.history:
+
+O objeto history fornece um histórico de navegação do navegador para a sessão atual.
+Ele permite navegar para frente e para trás no histórico de navegação do usuário.
+Exemplo de uso:
+
+window.history.back(); // Navega para a página anterior no histórico
+window.history.forward(); // Navega para a próxima página no histórico
+_______________________________________________________________________________________________________________________________________________________________________
+** SEELCIONADO ELEMENTOS DO SITE SITE COM DOM **
+
+
