@@ -319,13 +319,11 @@ Seleção Avançada (querySelector e querySelectorAll):
 
 querySelector: Seleciona o primeiro elemento que corresponde a um seletor CSS especificado.
 Exemplo:
-javascript
-Copiar código
+
 let primeiroParagrafo = document.querySelector('p');
 querySelectorAll: Seleciona todos os elementos que correspondem a um seletor CSS especificado.
 Exemplo:
-javascript
-Copiar código
+
 let todosParagrafos = document.querySelectorAll('p');
 Exemplos de Utilização
 Manipulação de Estilo e Conteúdo:
