@@ -370,8 +370,7 @@ const elemento = document.querySelector('seletor');
 seletor pode ser qualquer seletor CSS válido, como '#id' para selecionar pelo ID, '.classe' para selecionar por classe, 'tag' para selecionar por tag, ou até seletores mais complexos como 'pai > filho', 'pai filho', etc.
 Exemplo de uso:
 
-html
-Copiar código
+
 <div id="meuId" class="minhaClasse">...</div>
 
 const div = document.querySelector('#meuId'); // Seleciona pelo ID
