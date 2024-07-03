@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos DOM</title>
+    <meta charset="UTF-8"> <!-- Define o charset como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Eventos DOM</title> <!-- Título da página -->
     <style>
         div#area {
-            font: normal 20pt Arial;
-            background-color: rgb(42, 139, 42);
-            color: white;
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
-            text-align: center;
+            font: normal 20pt Arial; /* Define o estilo de fonte para o elemento */
+            background-color: rgb(42, 139, 42); /* Define a cor de fundo do elemento */
+            color: white; /* Define a cor do texto */
+            width: 200px; /* Define a largura do elemento */
+            height: 200px; /* Define a altura do elemento */
+            line-height: 200px; /* Define a altura da linha de texto para centralização vertical */
+            text-align: center; /* Alinha o texto ao centro */
         }
     </style>
 </head>
@@ -24,30 +24,33 @@
     
     
     <div id="area">
-        Interaja...
+        Interaja... <!-- Conteúdo inicial do elemento -->
     </div>
 
     <script>
-        var a = window.document.getElementById('area') 
-        a.addEventListener('click', clicar)
-        a.addEventListener('mouseenter', entrar)
-        a.addEventListener('mouseout', sair)
+        var a = window.document.getElementById('area'); // Obtém a referência para o elemento com id 'area'
 
-        function clicar () {           
-             a.innerText = 'Clicou!'
-             a.style.background = 'red'             
+        // Adiciona listeners de evento para o elemento 'a'
+        a.addEventListener('click', clicar); // Quando clicado, chama a função clicar
+        a.addEventListener('mouseenter', entrar); // Quando o mouse entra, chama a função entrar
+        a.addEventListener('mouseout', sair); // Quando o mouse sai, chama a função sair
+
+        // Função para lidar com o evento de clique
+        function clicar() {
+            a.innerText = 'Clicou!'; // Altera o texto do elemento para 'Clicou!'
+            a.style.background = 'red'; // Altera a cor de fundo para vermelho
         }
 
-        function entrar() {            
-            a.innerText = 'Entrou!'            
+        // Função para lidar com o evento de entrada do mouse
+        function entrar() {
+            a.innerText = 'Entrou!'; // Altera o texto do elemento para 'Entrou!'
         }
 
+        // Função para lidar com o evento de saída do mouse
         function sair() {
-            a.innerText = 'Saiu!'
-            a.style.background = 'rgb(42, 139, 42)' 
+            a.innerText = 'Saiu!'; // Altera o texto do elemento para 'Saiu!'
+            a.style.background = 'rgb(42, 139, 42)'; // Restaura a cor de fundo original
         }
-
-        
     </script>
 </body>
 </html>

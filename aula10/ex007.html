@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando Números</title>
+    <meta charset="UTF-8"> <!-- Define o charset como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Somando Números</title> <!-- Título da página -->
     <style>
         body {
-            font: normal 18pt Arial;
+            font: normal 18pt Arial; /* Define o estilo de fonte para o corpo da página */
         }
 
         input {
-            font: normal 18pt Arial;
-            width: 100px;
+            font: normal 18pt Arial; /* Define o estilo de fonte para os inputs */
+            width: 100px; /* Define a largura dos inputs */
         }
 
         div#res {
-            margin-top: 20px;
+            margin-top: 20px; /* Define a margem superior para o elemento div com id 'res' */
         }
     </style>
 </head>
 <body>
-    <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <h1>Somando Valores</h1> <!-- Título principal da página -->
+    <input type="number" name="txtn1" id="txtn1"> + <!-- Input para o primeiro número -->
+    <input type="number" name="txtn2" id="txtn2"> <!-- Input para o segundo número -->
+    <input type="button" value="Somar" onclick="somar()"> <!-- Botão para acionar a função somar() -->
+    <div id="res">Resultado</div> <!-- Div para exibir o resultado da soma -->
     <script>
         function somar() {
-            var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.querySelector('input#txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value) 
-            var n2 = Number(tn2.value) 
-            var s = n1 + n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é: <strong>${s}</strong>`
+            var tn1 = window.document.getElementById('txtn1'); // Obtém o input do primeiro número
+            var tn2 = window.document.querySelector('input#txtn2'); // Obtém o input do segundo número usando querySelector
+            var res = window.document.getElementById('res'); // Obtém a div onde será exibido o resultado
+            var n1 = Number(tn1.value); // Converte o valor do primeiro input para número
+            var n2 = Number(tn2.value); // Converte o valor do segundo input para número
+            var s = n1 + n2; // Calcula a soma dos dois números
+            res.innerHTML = `A soma entre ${n1} e ${n2} é: <strong>${s}</strong>`; // Exibe o resultado na div 'res'
         }
     </script>
 </body>
