@@ -437,7 +437,75 @@ Atualização dinâmica: A função somar() é acionada pelo botão Somar e atua
 Clareza e organização: Usar variáveis para armazenar referências e valores intermediários torna o código mais claro e fácil de entender. Cada variável tem um propósito específico dentro da função somar(), melhorando a legibilidade e facilitando futuras modificações ou manutenções no código.
 
 Portanto, essa abordagem combina acessos ao DOM, manipulação de valores e atualização dinâmica do conteúdo HTML para criar uma funcionalidade simples de soma de números, seguindo práticas recomendadas para desenvolvimento web.
+_______________________________________________________________________________________________________________________________________________________________________
 
+ESRUTURAS CONDICIONAIS:
 
+No JavaScript, as estruturas condicionais são usadas para controlar o fluxo de execução do código com base em condições específicas. Existem várias formas de estruturas condicionais que podem ser utilizadas:
 
+1. if-else
+O if é a estrutura condicional mais básica e permite executar um bloco de código se uma condição for verdadeira. O else opcional permite executar um bloco de código alternativo caso a condição seja falsa.
+
+Exemplo:
+o
+let idade = 18;
+
+if (idade >= 18) {
+    console.log("Pode votar!");
+} else {
+    console.log("Não pode votar ainda.");
+}
+2. if-else if-else
+Esta estrutura permite verificar múltiplas condições encadeadas. O else if é usado para adicionar condições adicionais além da primeira if.
+
+Exemplo:
+
+let nota = 75;
+
+if (nota >= 90) {
+    console.log("Aprovado com nota A");
+} else if (nota >= 80) {
+    console.log("Aprovado com nota B");
+} else if (nota >= 70) {
+    console.log("Aprovado com nota C");
+} else {
+    console.log("Reprovado");
+}
+3. Switch
+O switch é útil quando se deseja avaliar uma expressão com várias possíveis condições e executar um bloco de código diferente para cada valor possível.
+
+Exemplo:
+
+let diaSemana = 3;
+let nomeDia;
+
+switch (diaSemana) {
+    case 1:
+        nomeDia = "Segunda-feira";
+        break;
+    case 2:
+        nomeDia = "Terça-feira";
+        break;
+    case 3:
+        nomeDia = "Quarta-feira";
+        break;
+    case 4:
+        nomeDia = "Quinta-feira";
+        break;
+    case 5:
+        nomeDia = "Sexta-feira";
+        break;
+    default:
+        nomeDia = "Fim de semana";
+}
+console.log(`Hoje é ${nomeDia}`);
+4. Operador Ternário ( ? : )
+O operador ternário é uma forma compacta de escrever uma instrução if-else em uma única linha.
+
+Exemplo:
+
+let velocidade = 90;
+let mensagem = (velocidade > 80) ? "Velocidade muito alta" : "Velocidade dentro do limite";
+console.log(mensagem);
+Essas estruturas condicionais são fundamentais para a lógica de programação em JavaScript, permitindo que os desenvolvedores controlem o fluxo de execução com base em diferentes condições e variáveis.
  
