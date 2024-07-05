@@ -3,7 +3,7 @@ var hora = agora.getHours() //Pega a hora atual do computador e coloca na variav
 console.log(`Agora são exatamente ${hora} horas.`)
 
 if (hora <= 12) {
-    console.log('Bom dia!')
+    console.log('Bom Dia!')
 } else if (hora <= 18) {
     console.log('Boa Tarde!')
 } else {
