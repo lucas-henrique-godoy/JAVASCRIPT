@@ -455,6 +455,7 @@ if (idade >= 18) {
 } else {
     console.log("Não pode votar ainda.");
 }
+
 2. if-else if-else
 Esta estrutura permite verificar múltiplas condições encadeadas. O else if é usado para adicionar condições adicionais além da primeira if.
 
@@ -471,6 +472,7 @@ if (nota >= 90) {
 } else {
     console.log("Reprovado");
 }
+
 3. Switch
 O switch é útil quando se deseja avaliar uma expressão com várias possíveis condições e executar um bloco de código diferente para cada valor possível.
 
@@ -499,6 +501,7 @@ switch (diaSemana) {
         nomeDia = "Fim de semana";
 }
 console.log(`Hoje é ${nomeDia}`);
+
 4. Operador Ternário ( ? : )
 O operador ternário é uma forma compacta de escrever uma instrução if-else em uma única linha.
 
