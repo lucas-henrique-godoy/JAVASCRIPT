@@ -17,10 +17,10 @@
             var res = window.document.querySelector('div#res');
             var pais = txtpais.value; // Captura o valor do campo
             
-            if (pais === 'Brasil') {
-                res.innerHTML = `Você mora em ${pais}.`;
+            if (pais != 'Brasil') {
+                res.innerHTML = `Você mora em ${pais} e é estrangeiro!.`;
             } else {
-                res.innerHTML = `Você mora em: ${pais}.`;
+                res.innerHTML = `Você é Brasileiro!`;
             }
         }
     </script>
