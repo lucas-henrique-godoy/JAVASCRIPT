@@ -474,7 +474,7 @@ if (nota >= 90) {
 }
 
 3. Switch
-O switch é útil quando se deseja avaliar uma expressão com várias possíveis condições e executar um bloco de código diferente para cada valor possível. Útil para valore fixos, não tão útil em intervalos como os usados no if/else. O break no switch é obrigatório.
+O switch é útil quando se deseja avaliar uma expressão com várias possíveis condições e executar um bloco de código diferente para cada valor possível. Útil para valore fixos, não tão útil em intervalos de valores, onde o ideal é utilizar if/else (ex: quero testar entre uma valor e outro). O break no switch é obrigatório.
 
 Exemplo:
 

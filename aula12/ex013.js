@@ -17,6 +17,7 @@ var diaDaSemana = agora.getDay()
 */
 
 //console.log(diaDaSemana)
+
 switch (diaDaSemana) {
     case 0:
         console.log('Hoje é: Domingo!')
