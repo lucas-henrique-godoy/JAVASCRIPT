@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8"> <!-- Definindo o conjunto de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configurando a viewport para ajustar o layout em dispositivos móveis -->
+    <title>Hora do Dia</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Importando o arquivo de estilo externo 'estilo.css' -->
+
+    <!-- O script 'carregar()' será executado quando o corpo da página for carregado -->
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Hora do Dia</h1> <!-- Título principal da página -->
     </header>
     <section>
         <div id="msg">
-            Aqui vai aparecer a mensagem...
+            Aqui vai aparecer a mensagem... <!-- Área onde uma mensagem será exibida, inicialmente com texto genérico -->
         </div>
         <div id="foto">
-            <img id="imagem" src="fotomanha.png" alt="Foto do dia">
+            <img id="imagem" src="fotomanha.png" alt="Foto do dia"> <!-- Imagem que será exibida, inicialmente configurada para a foto da manhã -->
         </div>
     </section>
     <footer>
-        <p>&copy; CursoemVideo</p>
+        <p>&copy; CursoemVideo</p> <!-- Rodapé da página com o crédito para CursoemVideo -->
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js"></script> <!-- Importando o arquivo de script externo 'script.js' -->
 </body>
 </html>

@@ -1,30 +1,39 @@
-@charset "UTF-2";
-
 body {
-    background: rgb(70, 142, 236);
-    font: normal 15pt Arial;
+    background: rgb(70, 142, 236); /* Cor de fundo azul */
+    font: normal 1.5rem Arial; /* Configuração da fonte para Arial com tamanho 1.5 rem */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove preenchimentos externos */
 }
-header {
-    color: white;
-    text-align: center;
+
+header, footer {
+    color: white; /* Cor do texto branco */
+    text-align: center; /* Alinhamento central do texto */
+    padding: 15px 0; /* Preenchimento interno de 15 pixels no topo e na base */
 }
 
 section {
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    max-width: 80%; /* Largura máxima da seção de 80% do viewport */
+    margin: auto; /* Centraliza a seção horizontalmente */
+    padding: 15px; /* Preenchimento interno de 15 pixels */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo total da largura */
+    background-color: white; /* Cor de fundo branca */
+    border-radius: 10px; /* Borda arredondada com raio de 10 pixels */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363); /* Sombra com deslocamento de 3 pixels na horizontal e vertical, desfoque de 10 pixels e cor rgba */
+    text-align: center; /* Alinhamento central do texto */
+    display: flex; /* Container flexível */
+    flex-direction: column; /* Itens organizados em coluna */
+    align-items: center; /* Centraliza itens horizontalmente */
+    justify-content: center; /* Centraliza itens verticalmente */
 }
 
-div {
-    text-align: center;
-    padding: 8px;
+#foto {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da seção */
+    max-height: 70%; /* Altura máxima da imagem como 70% da altura da seção */
 }
 
-footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
+#imagem {
+    max-width: 100%; /* Imagem ocupa toda a largura disponível dentro de #foto */
+    max-height: 100%; /* Imagem ocupa toda a altura disponível dentro de #foto */
+    display: block; /* Remove espaços extras que às vezes aparecem em torno das imagens */
+    margin: auto; /* Centraliza a imagem horizontalmente */
 }
