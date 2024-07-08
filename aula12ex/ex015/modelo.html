@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de Idade</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css"> <!-- Inclui um arquivo de estilo externo -->
 </head>
 <body>
     <header>
-        <h1>Verficador de Idade</h1>
+        <h1>Verficador de Idade</h1> <!-- Título principal da página -->
     </header>
     <section>
         <div>
             <p>
                 Ano de Nascimento:
-                <input type="number" name="txtano" id="txtano" min="0">
+                <input type="number" name="txtano" id="txtano" min="0"> <!-- Campo de entrada para o ano de nascimento, com id 'txtano' -->
             </p>
             <p>
                 Sexo:
-                <input type="radio" name="radsex" id="mas" checked> <!--O name precisa ser igual para poder desmarcar uma opção e não deixar as 2 marcadas-->
+                <input type="radio" name="radsex" id="mas" checked> <!-- Botão de rádio para selecionar o sexo masculino, com id 'mas' e inicialmente marcado (checked) -->
                 <label for="mas">Masculino</label>
-                <input type="radio" name="radsex" id="fem">  <!--O name precisa ser igual para poder desmarcar uma opção e não deixar as 2 marcadas-->
+                <input type="radio" name="radsex" id="fem"> <!-- Botão de rádio para selecionar o sexo feminino, com id 'fem' -->
                 <label for="fem">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+                <input type="button" value="Verificar" onclick="verificar()"> <!-- Botão 'Verificar' que chama a função 'verificar()' quando clicado -->
             </p>
         </div>
         <div id="res">
-            Preencha os dados acima para ver o resultado!
+            Preencha os dados acima para ver o resultado! <!-- Área onde será exibido o resultado da verificação -->
         </div>
     </section>
     <footer>
-        <p>&copy; CursoemVideo</p>
+        <p>&copy; CursoemVideo</p> <!-- Rodapé da página -->
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Inclui um arquivo de script externo -->
 </body>
 </html>
