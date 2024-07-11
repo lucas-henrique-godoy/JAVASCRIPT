@@ -20,7 +20,7 @@ var contador = 1
        
 
 /* 
-OS CÓDIGOS ACIMA OBTEEM O RESULTADO ABAIXO, SEM TER QYE ESCREVER MUITAS LINHAS 
+OS CÓDIGOS ACIMA OBTEEM O RESULTADO ABAIXO, SEM TER QUE ESCREVER MUITAS LINHAS 
 console.log('Passo 1')
 console.log('Passo 2')
 console.log('Passo 3')
