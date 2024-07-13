@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Tabuada</title> <!-- Título da página -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Importa o arquivo CSS para estilização -->
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1> <!-- Título principal dentro do cabeçalho -->
     </header>
     <section>
         <div>
-            teste
+            <p>
+                Número: <input type="number" name="num" id="txtn"> <!-- Campo de entrada para o número -->
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()"> <!-- Botão para gerar a tabuada, chamando a função 'tabuada()' quando clicado -->
+            </p>
         </div>
         <div>
-            teste
+            <select name="tabuada" id="seltab" size="10"> <!-- Select onde será exibida a tabuada -->
+                <option>Digite um número acima</option> <!-- Opção padrão exibida inicialmente -->
+            </select>
         </div>
     </section>
     <footer>
-        <p>&copy; CursoemVideo</p>
+        <p>&copy; CursoemVideo</p> <!-- Rodapé da página com direitos autorais -->
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript para a lógica da tabuada -->
 </body>
 </html>
