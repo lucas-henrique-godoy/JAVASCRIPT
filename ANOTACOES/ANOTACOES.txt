@@ -1,4 +1,6 @@
 CURSO DE JAVASCRIPT
+- SITE PARA PEGAR EMOJIS E COLOCAR NA MINHA PÁGINA: https://unicode.org/emoji/charts/full-emoji-list.html
+OBS: Os código dos emojis unicode são assim- EX: U+1F603(carinha rindo). Para coloca-lo num arquivo js é necessário colocar assim-EX: \u{1F603} -> Essa éa formatação unicode para javascript, e só funciona entre crases.
 - Para abrir um novo terminal é só apertar CTRL + SHIFT + '.
 - Para entrar no node é só abrir um terminal e digitar node.
 - Dentro do node se quiser limpar a tela é só apertar CTRL + L.

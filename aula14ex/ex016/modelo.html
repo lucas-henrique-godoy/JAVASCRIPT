@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Contador</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Super Contador</title> <!-- Título da página -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Importa o arquivo CSS para estilização -->
 </head>
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Vamos contar</h1> <!-- Título principal dentro do cabeçalho -->
     </header>
     <section>
         <div id="dados">
-            <p>Início: <input type="number" name="inicio" id="txti"></p>
-            <p>Fim: <input type="number" name="fim" id="txtf"></p>
-            <p>Passo: <input type="number" name="passo" id="txtp"></p>
+            <p>Início: <input type="number" name="inicio" id="txti"></p> <!-- Campo de entrada para o início da contagem -->
+            <p>Fim: <input type="number" name="fim" id="txtf"></p> <!-- Campo de entrada para o fim da contagem -->
+            <p>Passo: <input type="number" name="passo" id="txtp"></p> <!-- Campo de entrada para o passo da contagem -->
             <p>
-                <input type="button" value="Contar" onclick="contar()">
+                <input type="button" value="Contar" onclick="contar()"> <!-- Botão para iniciar a contagem, chamando a função 'contar()' quando clicado -->
             </p>
         </div>
         <div id="res">
-            Preparando a contagem...
+            Preparando a contagem... <!-- Área onde será exibida a contagem, inicialmente mostra "Preparando a contagem..." -->
         </div>
     </section>
     <footer>
-        <p>&copy; CursoemVideo</p>
+        <p>&copy; CursoemVideo</p> <!-- Rodapé da página com direitos autorais -->
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript para a lógica de contagem -->
 </body>
 </html>
