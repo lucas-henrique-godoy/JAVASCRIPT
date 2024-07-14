@@ -513,4 +513,110 @@ let velocidade = 90;
 let mensagem = (velocidade > 80) ? "Velocidade muito alta" : "Velocidade dentro do limite";
 console.log(mensagem);
 Essas estruturas condicionais são fundamentais para a lógica de programação em JavaScript, permitindo que os desenvolvedores controlem o fluxo de execução com base em diferentes condições e variáveis.
+_______________________________________________________________________________________________________________________________________________________________________
+-ESTRUTURAS DE REPETIÇÃO: Em JavaScript, as estruturas de repetição permitem que você execute um bloco de código repetidamente enquanto uma condição específica é verdadeira. Existem várias maneiras de implementar loops em JavaScript, sendo as mais comuns:
+
+for loop:
+O loop for é usado quando você sabe exatamente quantas vezes deseja repetir uma ação. Ele possui a seguinte estrutura:
+
+for (inicialização; condição; incremento/decremento) {
+    // código a ser repetido
+}
+inicialização: normalmente inicializa uma variável de controle do loop.
+condição: verifica se o loop deve continuar ou não.
+incremento/decremento: atualiza a variável de controle após cada iteração.
+Exemplo:
+
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+Isso imprimirá os números de 0 a 4 no console.
+
+while loop:
+O loop while repete um bloco de código enquanto uma condição especificada é verdadeira:
+
+while (condição) {
+    // código a ser repetido
+}
+Exemplo:
+
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+Este código também imprimirá os números de 0 a 4.
+
+do-while loop:
+O loop do-while é semelhante ao while, mas garante que o bloco de código seja executado pelo menos uma vez, mesmo se a condição for falsa no início:
+
+do {
+    // código a ser repetido
+} while (condição);
+Exemplo:
+
+let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+Este também imprimirá os números de 0 a 4.
+
+Essas estruturas de repetição são fundamentais para controlar o fluxo de execução do código em JavaScript, permitindo que você automatize tarefas repetitivas e itere sobre coleções de dados, como arrays. É importante ter cuidado para evitar loops infinitos, onde a condição nunca se torna falsa, o que pode travar o navegador ou o ambiente de execução JavaScript.
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+- ARRAY : Um array/vetor/variável composta é uma variável que tem vários elementos, cada elemento é composto por seu valor e por uma chave de identificação.
+
+EX: Vamos analisar o código passo a passo:
+
+let num = [5, 8, 2, 9, 3];
+num[5] = 6;
+num.push(7);
+num.length;
+num.sort();
+console.log(num);
+Passo a passo da explicação:
+Inicialização do array num:
+
+let num = [5, 8, 2, 9, 3];
+Aqui, num é declarado como um array contendo os números [5, 8, 2, 9, 3].
+
+Atribuição de valor a num[5]:
+
+num[5] = 6;
+Esta linha atribui o valor 6 à posição num[5] do array. No entanto, o array original num tinha apenas 5 elementos (índices de 0 a 4), então ao fazer num[5] = 6, você está efetivamente adicionando um sexto elemento ao array e definindo seu valor como 6.
+
+Uso do método push():
+
+num.push(7);
+O método push() é usado para adicionar um elemento ao final do array. Aqui, estamos adicionando o número 7 ao final do array num. Após essa operação, num terá os elementos [5, 8, 2, 9, 3, 6, 7].
+
+Acesso ao atributo length:
+
+num.length;
+O atributo length de um array retorna o número de elementos no array. Neste caso, num.length retorna 7, pois agora o array num tem 7 elementos.
+
+Uso do método sort():
+
+num.sort();
+O método sort() é usado para ordenar os elementos de um array em ordem alfabética (para strings) ou em ordem numérica crescente (para números). Após a execução deste método, o array num será ordenado numericamente, resultando em [2, 3, 5, 6, 7, 8, 9].
+
+Saída no console:
+
+console.log(num);
+Por fim, console.log(num) imprime o array num ordenado [2, 3, 5, 6, 7, 8, 9] no console.
+
+Resumo dos métodos, atributos e ações realizadas:
+num[5] = 6: Adiciona o número 6 na posição 5 do array num.
+num.push(7): Adiciona o número 7 ao final do array num.
+num.length: Retorna o número de elementos atualmente no array num.
+num.sort(): Ordena os elementos do array num em ordem numérica crescente.
+console.log(num): Imprime o array num no console do navegador ou do ambiente de execução JavaScript.
+Com isso, o array num passa de [5, 8, 2, 9, 3] para [2, 3, 5, 6, 7, 8, 9] após a execução de todas as instruções fornecidas.
+
+
+
+
+
  
