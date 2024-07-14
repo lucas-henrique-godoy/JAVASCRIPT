@@ -1,4 +1,5 @@
 let valores = [8, 1, 7, 4, 2, 9]
+valores.sort()
 
 //console.log(valores) FORMA PADRÃO
 /*
@@ -12,7 +13,17 @@ console.log(valores[5])
 
 
 //MODO TRADICIONAL DE PERCURSO EM VETORES - FORMA PERSONALIZADA: Aqui é possível formatar a saída.
-
-for (let pos = 0; pos < valores.length; pos++) {
+/*for (let pos = 0; pos < valores.length; pos++) {
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 }
+*/
+
+
+// FORMA MAI SIMPLIFICADA E OTIMIZADA PARA VARIAVEIS COMPOSTAS E OBJETOS
+for (let pos in valores) {
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+}
+
+
+
+
