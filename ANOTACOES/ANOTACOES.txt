@@ -676,4 +676,6 @@ let indiceSete = num.indexOf(7);
 
 console.log(`O índice do valor 7 é: ${indiceSete}`); // Saída: O índice do valor 7 é: 3
 Este código imprime no console o índice da primeira ocorrência do valor 7 no array num, que é 3.
+_______________________________________________________________________________________________________________________________________________________________________
+-FUNÇÕES: São ações executadas assim que são chamadas ou em decorrência de algum evento. Uma função pode receber parâmetros retornar um resultado.
  
