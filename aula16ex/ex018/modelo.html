@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Link para o arquivo de estilo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1> <!-- Título principal da página -->
+    </header>
+    <section>
+        <div>
+            Número (entre 1 e 100): 
+            <input type="number" name="fnum" id="fnum"> <!-- Input para o usuário digitar um número -->
+            <input type="button" value="Adicionar" onclick="adicionar()"> <!-- Botão "Adicionar" que chama a função adicionar() no clique -->
+            <br><br><select name="flista" id="flista" size="6"></select> <!-- Select onde serão adicionados os números -->
+            <br><input type="button" value="Finalizar" onclick="finalizar()"> <!-- Botão "Finalizar" que chama a função finalizar() no clique -->
+        </div>
+        <div id="res">
+            <!-- Div onde serão exibidos os resultados -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p> <!-- Rodapé da página com créditos -->
+    </footer>
+    <script src="script.js"></script> <!-- Link para o arquivo de script JavaScript -->
+</body>
+</html>
